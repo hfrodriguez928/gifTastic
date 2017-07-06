@@ -65,13 +65,8 @@ $(document).ready(function(){
 
     var celebrity = [""];
 
-    
-        //This function "adds" the buttons 
-
-        // handles the event when clicked
         $("#theButton").on("click", function(){
             var celebrityButton = $("#gif-input").val();
-            //adds the new celebrity
 
             var newButton = $("<button/>").addClass( "btn btn-info celebrity").attr("data-name",celebrityButton).html(celebrityButton).css({"margin": "5px"});
             
@@ -139,6 +134,6 @@ $(document).ready(function(){
 
             $("#gif-input").val("");
             return false;
-        })
+        });
   
 });
